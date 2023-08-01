@@ -1,2 +1,2 @@
 # ServerFormsDemo
-A demo for using live server alongside forms
+A demo for forms

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit form</title>
+</head>
+<body>
+    <!-- form is just an element type like h1, but
+    it can be given an action which represents another
+    page on the server or broader internet to go to when
+    the submit button is pressed. It also can be given a
+    method; here, we are using GET, both GET and POST are 
+    common methods for submiting data in forms POST is more 
+    secrue you can recognize when a site uses GET because 
+    data from the form appears in the URL -->
+    <form 
+    action="https://learn-forms.netlify.com/submit/part1"
+      method="GET">
+      <h1>Do You understand forms now?</h1>
+      <!-- Submisions contain the values in the name paired
+       with the value the user submits. for in each label
+       determins which input it should go with -->
+
+       <!-- the first input type text lets you type a submision 
+        note this is required so can't be left blank-->
+      <label for="name"> Name:</label><br>
+      <input required type="text" id="name" name="name"><br>
+      <!-- Next we have radio inputs where you select one of several options
+      name is the same for these and for on the lables corresponds to
+      the particular response that lable is for -->
+        <label for="yes">yes</label>
+        <input type="radio" id="yes" name="understood" value="yes">
+        <label for="no">no</label>
+        <input type="radio" id="no" name="understood" value="no">
+        <p>Select all that apply</p>
+        <!-- finally checkbox is similar to radio but it lets us select more than
+        one response -->
+        <input type="checkbox" id="feedback1" name="feedback1" value="friend">
+        <label for="feedback1"> Forms are my friend now</label><br>
+        <input type="checkbox" id="feedback2" name="feedback2" value="enemy">
+        <label for="feedback2"> Forms are my enemy now</label><br>
+        <input type="checkbox" id="feedback3" name="feedback3" value="excited">
+        <label for="feedback3"> I am excited to learn more about servers</label><br>
+        <input type="checkbox" id="feedback4" name="feedback4" value="scared"> 
+        <label for="feedback4"> I am scared to learn more about servers</label><br>
+        <button type="submit">Submit</button>
+    </form>
+
+  
+</body>
+</html>
